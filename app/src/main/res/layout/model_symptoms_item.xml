@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Title"
+            android:textStyle="bold"
+            android:layout_margin="8dp"
+            android:textSize="20sp"
+            android:id="@+id/symptoms_title"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Body"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:textStyle="italic"
+            android:layout_margin="8dp"
+            android:textSize="16sp"
+            android:id="@+id/symptoms_body"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/symptoms_share"
+            android:src="@drawable/ic_menu_share"
+            android:layout_gravity="end"/>
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>

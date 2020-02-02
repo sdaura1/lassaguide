@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_dashboard">
+
+    <fragment
+        android:id="@+id/nav_guide"
+        android:name="brand.age.com.lassaguide.fragments.FirstAidFragment"
+        android:label="@string/menu_guide"
+        tools:layout="@layout/fragment_first_aid" />
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="brand.age.com.lassaguide.fragments.DashboardFragment"
+        android:label="LASSA FEVER GUIDE"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/nav_background"
+        android:name="brand.age.com.lassaguide.fragments.ContributorsFragment"
+        android:label="Contributors"
+        tools:layout="@layout/fragment_contributors" />
+
+    <fragment
+        android:id="@+id/nav_symptoms"
+        android:name="brand.age.com.lassaguide.fragments.SymptomsFragment"
+        android:label="@string/menu_symptoms"
+        tools:layout="@layout/fragment_symptoms" />
+
+    <fragment
+        android:id="@+id/nav_precautions"
+        android:name="brand.age.com.lassaguide.fragments.PrecautionsFragment"
+        android:label="@string/menu_precautions"
+        tools:layout="@layout/fragment_precautions" />
+
+    <fragment
+        android:id="@+id/nav_calls"
+        android:name="brand.age.com.lassaguide.fragments.CallsFragment"
+        android:label="@string/menu_call"
+        tools:layout="@layout/fragment_calls" />
+
+    <fragment
+        android:id="@+id/nav_sms"
+        android:name="brand.age.com.lassaguide.fragments.TransmissionFragment"
+        android:label="Transmission"
+        tools:layout="@layout/fragment_transmission" />
+</navigation>
